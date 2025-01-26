@@ -1,0 +1,169 @@
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.theme-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.divider {
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+.divider span {
+  background-color: inherit;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #ccc;
+  z-index: 0;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.social-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  color: red;
+  height: 60px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-icon-container svg {
+  font-size: 30px;
+}
+
+.social-icon-container:hover {
+  background-color: #f5f5f5;
+}
+
+.signup-text {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.signup-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Dark Theme Styles */
+.dark .login-container {
+  background-color: #191919;
+  color: #fff;
+  border: 0.2px solid #fff;
+}
+
+.dark .login-button {
+  background-color: #00ff00;
+  color: #000;
+}
+
+.dark .social-icon-container {
+  color: #fff;
+  background-color: black;
+  border: 1px solid #fff;
+}
+
+.dark .social-icon-container:hover {
+  background-color: #444;
+}
+
+.dark a.signup-link {
+  color: #00aaff;
+} 
