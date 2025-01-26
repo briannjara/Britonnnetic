@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaGoogle, FaMicrosoft, FaGithub, FaEye, FaEyeSlash } from 'react-icons/fa';
 import './Login.css';
 
-function Login({ toggleForm }) {
+function Login({ toggleForm, forgotPassword }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -41,7 +41,10 @@ function Login({ toggleForm }) {
               {showPassword ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
-          <a href="#" className="forgot-password">Forgot your password?</a>
+          <a href="#" className="forgot-password" onClick={(e) => {
+            e.preventDefault();
+            forgotPassword();
+          }}>Forgot your password?</a>
         </div>
         <button type="submit" className="login-button">Login</button>
       </form>
